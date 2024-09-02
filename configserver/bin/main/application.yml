@@ -1,0 +1,18 @@
+server:
+  port: 8090
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/yogeshluck27/GreenLearner
+          
+        health:
+          enabled: true
+      name: config-server
+
+management:
+  endpoint:
+    health:
+      show-details: always
+
